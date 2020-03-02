@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/HelpyTheme">
-        <activity android:name=".ProposerEnLigne"></activity>
+        <activity android:name=".SelectMatiere"></activity>
+        <activity android:name=".ProposerEnLigne" />
         <activity android:name=".ProposerDomicile" />
         <activity android:name=".ListePostes" />
         <activity android:name=".AideEnLigne" />
