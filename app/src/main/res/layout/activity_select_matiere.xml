@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".SelectMatiere">
 
@@ -14,9 +15,8 @@
         android:fontFamily="casual"
         android:gravity="center"
         android:text="@string/selectMatiere"
-        android:textColor="#265CCD"
+        android:textColor="#FFF"
         android:textSize="20dp"
-
         android:textStyle="bold" />
 
     <LinearLayout
@@ -39,6 +39,7 @@
             android:layout_width="120dp"
             android:layout_height="110dp"
             android:background="@color/transparent"
+            android:onClick="onClick"
             android:layout_margin="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/physique" />
@@ -55,6 +56,7 @@
             android:layout_width="120dp"
             android:layout_height="110dp"
             android:background="@color/transparent"
+            android:onClick="onClick"
             android:layout_margin="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/chimie" />
@@ -64,6 +66,7 @@
             android:layout_width="120dp"
             android:layout_height="110dp"
             android:background="@color/transparent"
+            android:onClick="onClick"
             android:layout_margin="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/svt" />
@@ -79,6 +82,7 @@
             android:layout_width="120dp"
             android:layout_height="110dp"
             android:background="@color/transparent"
+            android:onClick="onClick"
             android:layout_margin="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/histoire" />
@@ -88,6 +92,7 @@
             android:layout_width="120dp"
             android:layout_height="110dp"
             android:background="@color/transparent"
+            android:onClick="onClick"
             android:layout_margin="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/geographie" />
@@ -104,6 +109,7 @@
             android:layout_width="120dp"
             android:layout_height="110dp"
             android:background="@color/transparent"
+            android:onClick="onClick"
             android:layout_margin="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/francais" />
@@ -113,6 +119,7 @@
             android:layout_width="120dp"
             android:layout_height="110dp"
             android:background="@color/transparent"
+            android:onClick="onClick"
             android:layout_margin="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/anglais" />
@@ -129,6 +136,7 @@
             android:layout_width="120dp"
             android:layout_height="110dp"
             android:background="@color/transparent"
+            android:onClick="onClick"
             android:layout_margin="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/art" />

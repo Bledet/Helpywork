@@ -56,6 +56,7 @@ public class SelectMatiere extends AppCompatActivity {
 
     public void onClick(View v) {
         selected = findViewById(v.getId());
+        System.out.println("dfdsffffffffffff" + typeAide);
 
         goNextActivity(selected.getTag().toString(), typeAide);
 
