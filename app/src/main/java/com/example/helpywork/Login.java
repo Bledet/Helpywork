@@ -11,22 +11,22 @@ public class Login extends AppCompatActivity {
 
     private int NEW = 1;
 
-    private EditText login;
-    private EditText password;
+    private EditText et_email;
+    private EditText et_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        login = (EditText) findViewById(R.id.login);
-        password = (EditText) findViewById(R.id.password);
+        et_email = (EditText) findViewById(R.id.et_email);
+        et_password = (EditText) findViewById(R.id.et_password);
     }
 
     public void onClick(View v){
         Intent intent = new Intent(Login.this, Account.class);
-        intent.putExtra("login", login.getText().toString());
-        intent.putExtra("password", password.getText().toString());
+        intent.putExtra("login", et_email.getText().toString());
+        intent.putExtra("password", et_password.getText().toString());
         Login.this.startActivity(intent);
     }
 
