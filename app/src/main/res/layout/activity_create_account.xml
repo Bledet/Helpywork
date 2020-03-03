@@ -111,6 +111,7 @@
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:text="S'incrire"
+                android:fontFamily="casual"
                 android:background="@drawable/border_white"
                 android:textColor="#FFF"
                 android:textSize="20dp"
