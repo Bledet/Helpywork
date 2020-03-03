@@ -1,9 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".SelectMatiere">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/selectMatiere"
+        android:textColor="#265CCD"
+        android:textSize="20dp"
+
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/mathButton"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mathematiques" />
+
+        <ImageButton
+            android:id="@+id/physiqueButton"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/physique" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/chimieButton"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chimie" />
+
+        <ImageButton
+            android:id="@+id/svtButton"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/svt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/histButton"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/histoire" />
+
+        <ImageButton
+            android:id="@+id/geoButton"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/geographie" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/francaisButton"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/francais" />
+
+        <ImageButton
+            android:id="@+id/anglaisButton"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/anglais" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/artButton"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/art" />
+    </LinearLayout>
+</LinearLayout>

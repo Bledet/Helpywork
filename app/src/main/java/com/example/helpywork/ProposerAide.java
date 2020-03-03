@@ -36,10 +36,12 @@ public class ProposerAide extends AppCompatActivity {
 
 
         if(selected.getTag() == "online"){
-            Intent intent = new Intent(ProposerAide.this, ProposerEnLigne.class);
+            Intent intent = new Intent(ProposerAide.this, SelectMatiere.class);
+            intent.putExtra("typeAide", "online");
             startActivityForResult(intent, CREATE);
         } else if ( selected.getTag() == "offline"){
-            Intent intent = new Intent(ProposerAide.this, ProposerDomicile.class);
+            Intent intent = new Intent(ProposerAide.this, SelectMatiere.class);
+            intent.putExtra("typeAide","offline");
             startActivityForResult(intent, CREATE);
         }
 

@@ -5,27 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ProposerDomicile">
+
     <TextView
-        android:id="@+id/matiere"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Matière"
+        android:gravity="center"
+        android:text="@string/selectNiveau"
         android:fontFamily="casual"
         android:textStyle="bold"
         android:textColor="#265CCD"
         android:textSize="20dp"
         android:layout_margin="20dp"/>
-    <Spinner
-        android:id="@+id/spinnermatiere"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
 
     <TextView
-        android:id="@+id/niveau"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Niveau: De la:"
+        android:text="De la"
         android:fontFamily="casual"
         android:textStyle="bold"
         android:textColor="#265CCD"
@@ -33,8 +28,9 @@
         android:layout_margin="20dp"/>
     <Spinner
         android:id="@+id/spinnerniveau1"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         />
 
     <TextView
@@ -49,8 +45,9 @@
         android:layout_margin="20dp"/>
     <Spinner
         android:id="@+id/spinnerniveau2"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         />
 
     <LinearLayout

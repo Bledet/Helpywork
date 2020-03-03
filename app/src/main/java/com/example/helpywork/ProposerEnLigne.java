@@ -23,28 +23,6 @@ public class ProposerEnLigne extends AppCompatActivity {
         setContentView(R.layout.activity_proposer_en_ligne);
 
 
-        spinnermatiere = (Spinner) findViewById(R.id.spinnermatiere);
-        List matierearray = new ArrayList();
-        matierearray.add("Mathèmatiques");
-        matierearray.add("Français");
-        matierearray.add("Anglais");
-        matierearray.add("Histoire");
-        matierearray.add("Géographie");
-        matierearray.add("SVT");
-        matierearray.add("Physique");
-        matierearray.add("Chimie");
-
-        ArrayAdapter adapter = new ArrayAdapter(
-                this,
-                android.R.layout.simple_spinner_item,
-                matierearray
-        );
-
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnermatiere.setAdapter(adapter);
-
-
-
         spinnerniveau1 = (Spinner) findViewById(R.id.spinnerniveau1);
         List niveauarray = new ArrayList();
         niveauarray.add("6ème");
