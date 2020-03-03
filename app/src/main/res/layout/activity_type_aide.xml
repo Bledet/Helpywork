@@ -44,7 +44,7 @@
                 android:id="@+id/aideEnLigne"
                 android:layout_width="258dp"
                 android:layout_height="137dp"
-                android:onClick="onClickenLigne"
+                android:onClick="onClick"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/enligne"
                 android:background="@color/transparent"/>
@@ -69,7 +69,7 @@
                 android:id="@+id/aideADomicile"
                 android:layout_width="258dp"
                 android:layout_height="137dp"
-                android:onClick="onClickDomicile"
+                android:onClick="onClick"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/domicile"
                 android:background="@color/transparent"/>

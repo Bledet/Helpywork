@@ -19,13 +19,6 @@
         android:textColor="#FFF"/>
 
     <Spinner
-        android:id="@+id/spinnerMatiere"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"/>
-
-    <Spinner
         android:id="@+id/spinnerNiveau"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
@@ -39,7 +32,9 @@
         android:background="@drawable/border_white"
         android:textColor="#FFF"
         android:layout_gravity="center"
-        android:text="Filtrer"/>
+        android:text="Filtrer"
+        android:fontFamily="casual"
+        />
 
     <LinearLayout
         android:id="@+id/layoutList"

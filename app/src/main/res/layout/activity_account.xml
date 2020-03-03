@@ -48,14 +48,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vous voulez aider"
-                android:textColor="#666666"
+                android:textColor="#FFF"
                 android:fontFamily="casual"
                 android:textSize="20dp" />
 
             <ImageButton
                 android:id="@+id/teacherButton"
-                android:layout_width="258dp"
-                android:layout_height="154dp"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
                 android:onClick="onClick"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/teacher" />
@@ -71,14 +71,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vous avez besoin d'aide"
-                android:textColor="#666666"
+                android:textColor="#FFF"
                 android:fontFamily="casual"
                 android:textSize="20dp"/>
 
             <ImageButton
                 android:id="@+id/studentButton"
-                android:layout_width="258dp"
-                android:layout_height="137dp"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
                 android:onClick="onClick"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/etudiant" />

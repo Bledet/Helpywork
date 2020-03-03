@@ -20,7 +20,8 @@
         android:layout_margin="20dp"/>
     <Spinner
         android:id="@+id/spinnerniveau"
-        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         />
 
@@ -66,6 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Valider"
+            android:fontFamily="casual"
             android:textColor="#FFF"
             android:background="@drawable/border_white"
             android:onClick="onClick"

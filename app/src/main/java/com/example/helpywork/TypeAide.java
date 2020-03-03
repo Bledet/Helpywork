@@ -8,10 +8,11 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class ProposerAide extends AppCompatActivity {
+public class TypeAide extends AppCompatActivity {
 
 
     private int CREATE = 1;
+    private Intent receivedIntent;
     private ImageButton selected;
 
     private ImageButton aideEnLigne;
@@ -20,8 +21,9 @@ public class ProposerAide extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_proposer_aide);
+        setContentView(R.layout.activity_type_aide);
 
+        receivedIntent = getIntent();
 
         aideEnLigne = (ImageButton) findViewById(R.id.aideEnLigne);
         aideADomicile = (ImageButton) findViewById(R.id.aideADomicile);
@@ -34,15 +36,16 @@ public class ProposerAide extends AppCompatActivity {
     public void onClick(View v){
         selected = findViewById(v.getId());
 
-
         if(selected.getTag() == "online"){
-            Intent intent = new Intent(ProposerAide.this, SelectMatiere.class);
+            Intent intent = new Intent(TypeAide.this, SelectMatiere.class);
             intent.putExtra("typeAide", "online");
-            startActivityForResult(intent, CREATE);
+            intent.putExtra("statut", receivedIntent.getStringExtra("statut"));
+            startActivity(intent);
         } else if ( selected.getTag() == "offline"){
-            Intent intent = new Intent(ProposerAide.this, SelectMatiere.class);
+            Intent intent = new Intent(TypeAide.this, SelectMatiere.class);
             intent.putExtra("typeAide","offline");
-            startActivityForResult(intent, CREATE);
+            intent.putExtra("statut", receivedIntent.getStringExtra("statut"));
+            startActivity(intent);
         }
 
     }

@@ -11,7 +11,8 @@ public class SelectMatiere extends AppCompatActivity {
 
     private int CREATE = 1;
     private String typeAide;
-
+    private String statut;
+    private String selectedMatiere;
     private ImageButton selected;
 
     private ImageButton mathButton;
@@ -32,6 +33,7 @@ public class SelectMatiere extends AppCompatActivity {
 
         Intent intent = getIntent();
         typeAide = intent.getStringExtra("typeAide");
+        statut = intent.getStringExtra("statut");
 
         mathButton = (ImageButton) findViewById(R.id.mathButton);
         physiqueButton = (ImageButton) findViewById(R.id.physiqueButton);
@@ -56,20 +58,58 @@ public class SelectMatiere extends AppCompatActivity {
 
     public void onClick(View v) {
         selected = findViewById(v.getId());
-        System.out.println("dfdsffffffffffff" + typeAide);
 
         goNextActivity(selected.getTag().toString(), typeAide);
 
     }
 
+    public String generateMatiere(String tag){
+        switch (tag){
+            case "math" :
+                return "Mathématique";
+            case "physique" :
+                return "Physique";
+            case "chimie" :
+                return "Chimie";
+            case "histoire" :
+                return "Histoire";
+            case "geographie" :
+                return "Géographie";
+            case "svt" :
+                return "SVT";
+            case "francais" :
+                return "Français";
+            case "anglais" :
+                return "Anglais";
+            case "art" :
+                return "Art";
+            default:
+                return "Empty";
+        }
+    }
+
     public void goNextActivity(String tag, String typeAide) {
         Intent intent;
         if (typeAide.matches("online")) {
-            intent = new Intent(SelectMatiere.this, ProposerEnLigne.class);
+            System.out.println("EN LIGNE");
+            if(statut.matches("etudiant")){
+                System.out.println("ETUDIANT EN LIGNE");
+                intent = new Intent(SelectMatiere.this, AideEnLigne.class);
+            } else {
+                System.out.println("PROF EN LIGNE");
+                intent = new Intent(SelectMatiere.this, ProposerEnLigne.class);
+            }
         } else {
-            intent = new Intent(SelectMatiere.this, ProposerDomicile.class);
+            System.out.println("HORS LIGNE");
+            if(statut.matches("etudiant")) {
+                System.out.println("ETUDIANT HORS LIGNE");
+                intent = new Intent(SelectMatiere.this, AideDomicile.class);
+            } else {
+                System.out.println("PROF HORS LIGNE");
+                intent = new Intent(SelectMatiere.this, ProposerDomicile.class);
+            }
         }
-        intent.putExtra("matiere", tag);
+        intent.putExtra("matiere", generateMatiere(tag));
         intent.putExtra("typeAide", typeAide);
         startActivity(intent);
     }

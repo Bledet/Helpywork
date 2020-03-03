@@ -23,8 +23,6 @@ public class AideDomicile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aide_domicile);
 
-
-        Spinner spinnerMatiere = (Spinner) findViewById(R.id.spinnerMatiere);
         Spinner spinnerNiveau = (Spinner) findViewById(R.id.spinnerNiveau);
         layoutList = (LinearLayout) findViewById(R.id.layoutList);
 
@@ -33,13 +31,6 @@ public class AideDomicile extends AppCompatActivity {
         /* ----------------------------------------------------------------------- */
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.matiere_array, R.layout.spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerMatiere.setAdapter(adapter);
-
-        /* ----------------------------------------------------------------------- */
-
-        adapter = ArrayAdapter.createFromResource(this,
                 R.array.niveau_array, R.layout.spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerNiveau.setAdapter(adapter);

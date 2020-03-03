@@ -110,14 +110,12 @@
                     android:textAlignment="center"
                     />
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="70dp"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:background="@drawable/border_white"
-                    android:textAlignment="center"
                     android:clickable="true"
                     android:fontFamily="casual"
-                    android:textSize="17dp"
-                    android:textStyle="bold"
                     android:textColor="#EEE"
                     android:text="S'inscrire"
                     android:onClick="createAccount"/>
