@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".Login">
 
@@ -20,9 +21,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ajout d'un problème"
+                android:text="@string/ajoutProblem"
                 android:textAlignment="center"
-                android:textColor="#265CCD"
+                android:textColor="#FFF"
                 android:textSize="30dp"
                 android:fontFamily="casual"/>
 
@@ -37,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/problemTitle"
                     android:textSize="25dp"
-                    android:textColor="#666666"
+                    android:textColor="#FFF"
                     android:fontFamily="casual"/>
                 <EditText
                     android:id="@+id/login"
@@ -46,9 +47,11 @@
                     android:layout_marginStart="50dp"
                     android:layout_marginEnd="50dp"
                     android:textAlignment="center"
+                    android:textColor="#FFF"
                     android:inputType="text"
-                    android:backgroundTint="#000"
-                    android:hint="@string/problemTitleHint"/>
+                    android:backgroundTint="#FFF"
+                    android:hint="@string/problemTitleHint"
+                    android:textColorHint="#CCC"/>
             </LinearLayout>
 
             <LinearLayout
@@ -62,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/problemDescription"
                     android:textSize="25dp"
-                    android:textColor="#666666"
+                    android:textColor="#FFF"
                     android:fontFamily="casual"/>
 
                 <EditText
@@ -71,7 +74,8 @@
                     android:layout_height="180dp"
                     android:layout_marginStart="50dp"
                     android:layout_marginEnd="50dp"
-                    android:backgroundTint="#000"
+                    android:backgroundTint="#FFF"
+                    android:textColorHint="#CCC"
                     android:hint="@string/problemDescriptionHint"
                     android:textAlignment="center" />
             </LinearLayout>
@@ -95,6 +99,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:background="@drawable/border_white"
                 android:text="Poster"
                 android:layout_margin="5dp"/>
 

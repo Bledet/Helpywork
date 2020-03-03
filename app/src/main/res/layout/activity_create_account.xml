@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/welcome_display"
                 android:textAlignment="center"
-                android:textColor="#265CCD"
+                android:textColor="#FFF"
                 android:textSize="30dp"
                 android:fontFamily="casual"/>
 
@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:text="TON LOGIN"
                     android:textSize="25dp"
-                    android:textColor="#666666"
+                    android:textColor="#FFF"
                     android:fontFamily="casual"/>
                 <EditText
                     android:id="@+id/login"
@@ -48,8 +48,9 @@
                     android:layout_marginEnd="50dp"
                     android:textAlignment="center"
                     android:inputType="text"
-                    android:backgroundTint="#000"
-                    android:hint="@string/login"/>
+                    android:backgroundTint="#FFF"
+                    android:hint="@string/login"
+                    android:textColorHint="#CCC"/>
             </LinearLayout>
 
             <LinearLayout
@@ -63,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:text="TON MOT DE PASSE"
                     android:textSize="25dp"
-                    android:textColor="#666666"
+                    android:textColor="#FFF"
                     android:fontFamily="casual"/>
 
                 <EditText
@@ -72,9 +73,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginEnd="50dp"
-                    android:backgroundTint="#000"
+                    android:backgroundTint="#FFF"
                     android:inputType="textPassword"
                     android:hint="@string/password"
+                    android:textColorHint="#CCC"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -89,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:text="CONFIRMATION"
                     android:textSize="25dp"
-                    android:textColor="#666666"
+                    android:textColor="#FFF"
                     android:fontFamily="casual"/>
 
                 <EditText
@@ -98,16 +100,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginEnd="50dp"
-                    android:backgroundTint="#000"
+                    android:backgroundTint="#FFF"
                     android:inputType="textPassword"
                     android:hint="@string/confirm"
+                    android:textColorHint="#CCC"
                     android:textAlignment="center" />
             </LinearLayout>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
                 android:layout_height="wrap_content"
-                android:text="S'incrire !"
+                android:text="S'incrire"
+                android:background="@drawable/border_white"
+                android:textColor="#FFF"
+                android:textSize="20dp"
                 android:onClick="onClick"/>
         </LinearLayout>
     </LinearLayout>

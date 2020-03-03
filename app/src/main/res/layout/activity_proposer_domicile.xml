@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".ProposerDomicile">
 
     <TextView
@@ -13,7 +14,8 @@
         android:text="Niveau"
         android:fontFamily="casual"
         android:textStyle="bold"
-        android:textColor="#265CCD"
+        android:textColor="#FFF"
+        android:layout_gravity="center"
         android:textSize="20dp"
         android:layout_margin="20dp"/>
     <Spinner
@@ -43,8 +45,9 @@
                 android:layout_marginEnd="50dp"
                 android:textAlignment="center"
                 android:inputType="text"
-                android:backgroundTint="#000"
-                android:hint="Rayon en km"/>
+                android:backgroundTint="#FFF"
+                android:hint="Rayon en km"
+                android:textColorHint="#CCC"/>
 
             <EditText
                 android:id="@+id/tarif"
@@ -54,14 +57,17 @@
                 android:layout_marginEnd="50dp"
                 android:textAlignment="center"
                 android:inputType="text"
-                android:backgroundTint="#000"
-                android:hint="Tarif à l'heure"/>
+                android:backgroundTint="#FFF"
+                android:hint="Tarif à l'heure"
+                android:textColorHint="#CCC"/>
         </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Valider"
+            android:textColor="#FFF"
+            android:background="@drawable/border_white"
             android:onClick="onClick"
             android:layout_margin="5dp"/>
     </LinearLayout>

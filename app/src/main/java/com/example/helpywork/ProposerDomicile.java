@@ -35,7 +35,7 @@ public class ProposerDomicile extends AppCompatActivity {
 
         ArrayAdapter adapter2 = new ArrayAdapter(
                 this,
-                android.R.layout.simple_spinner_item,
+                R.layout.spinner_item,
                 niveauarray
         );
 

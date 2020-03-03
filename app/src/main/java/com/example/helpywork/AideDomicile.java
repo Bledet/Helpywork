@@ -33,14 +33,14 @@ public class AideDomicile extends AppCompatActivity {
         /* ----------------------------------------------------------------------- */
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.matiere_array, android.R.layout.simple_spinner_item);
+                R.array.matiere_array, R.layout.spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMatiere.setAdapter(adapter);
 
         /* ----------------------------------------------------------------------- */
 
         adapter = ArrayAdapter.createFromResource(this,
-                R.array.niveau_array, android.R.layout.simple_spinner_item);
+                R.array.niveau_array, R.layout.spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerNiveau.setAdapter(adapter);
 

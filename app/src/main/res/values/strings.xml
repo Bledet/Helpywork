@@ -29,6 +29,9 @@
         <item>1ere</item>
         <item>Terminal</item>
     </string-array>
+
+    <string name="rechercheEnseignant">Recherchez votre enseignant</string>
+    <string name="ajoutProblem">Ajout d\'un problème</string>
     <string name="selectNiveau">Sélectionnez une tranche de niveau</string>
     <string name="selectMatiere">Sélectionnez la matière</string>
     <string name="problemTitle">Titre du problème</string>
