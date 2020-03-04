@@ -41,6 +41,9 @@
         <item>Terminal</item>
     </string-array>
 
+    <string name="queFaire">Que voulez-vous faire ?</string>
+    <string name="demandes">Mes demandes d\'aide</string>
+    <string name="contribs">Mes contributions</string>
     <string name="rechercheEnseignant">Recherchez votre enseignant</string>
     <string name="description">Description du niveau</string>
     <string name="chapitre">Titre du chapitre</string>
@@ -51,4 +54,8 @@
     <string name="problemTitleHint">Veuillez entrer votre titre</string>
     <string name="problemDescription">Description du problème</string>
     <string name="problemDescriptionHint">Saisissez la description de votre problème</string>
+    <string name="title_activity_botton_navigation">BottonNavigation</string>
+    <string name="title_account">Compte</string>
+    <string name="title_aides">Mes Aides</string>
+    <string name="title_agir">Agir</string>
 </resources>

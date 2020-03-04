@@ -14,7 +14,7 @@
         android:text="Niveau"
         android:fontFamily="casual"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         android:layout_gravity="center"
         android:textSize="20dp"
         android:layout_margin="20dp"/>
@@ -68,7 +68,7 @@
                 android:layout_marginEnd="50dp"
                 android:textAlignment="center"
                 android:inputType="text"
-                android:backgroundTint="#FFF"
+                android:backgroundTint="@android:color/white"
                 android:hint="Rayon en km"
                 android:textColorHint="#CCC"/>
 
@@ -80,7 +80,7 @@
                 android:layout_marginEnd="50dp"
                 android:textAlignment="center"
                 android:inputType="text"
-                android:backgroundTint="#FFF"
+                android:backgroundTint="@android:color/white"
                 android:hint="Tarif à l'heure"
                 android:textColorHint="#CCC"/>
         </LinearLayout>
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:text="Valider"
             android:fontFamily="casual"
-            android:textColor="#FFF"
+            android:textColor="@android:color/white"
             android:background="@drawable/border_white"
             android:onClick="onClick"
             android:layout_margin="5dp"/>

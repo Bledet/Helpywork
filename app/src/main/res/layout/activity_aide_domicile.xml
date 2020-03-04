@@ -18,7 +18,7 @@
         android:textStyle="bold"
         android:fontFamily="casual"
         android:textSize="20dp"
-        android:textColor="#FFF"/>
+        android:textColor="@android:color/white"/>
 
 
     <LinearLayout
