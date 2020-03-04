@@ -49,9 +49,7 @@ public class AideDomicile extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerNiveau.setAdapter(adapter);
 
-
     }
-
 
     public void onClick(View v){
         Intent intent = new Intent(AideDomicile.this, TypeAide.class);

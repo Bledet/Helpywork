@@ -93,17 +93,17 @@
                 android:id="@+id/spinnerNiveau"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp"
-                android:layout_margin="20dp"/>
+                android:layout_marginLeft="20dp" />
 
             <Button
+                android:id="@+id/poster"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#FFF"
                 android:background="@drawable/border_white"
                 android:text="Poster"
                 android:fontFamily="casual"
+                android:onClick="onClick"
                 android:layout_margin="5dp"/>
 
 

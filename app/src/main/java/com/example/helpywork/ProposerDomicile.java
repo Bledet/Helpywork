@@ -11,6 +11,7 @@ public class ProposerDomicile extends ListActivity {
         super.onCreate(savedInstanceState);
 
         ListAdapter adaptateur = new ListAdapter(this);
+
         setListAdapter(adaptateur);
     }
 
