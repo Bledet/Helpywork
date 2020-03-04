@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
@@ -25,10 +26,17 @@ public class Login extends AppCompatActivity {
     }
 
     public void onClick(View v){
-        Intent intent = new Intent(Login.this, Account.class);
-        intent.putExtra("login", et_email.getText().toString());
-        intent.putExtra("password", et_password.getText().toString());
-        Login.this.startActivity(intent);
+         String email =et_email.getText().toString();
+         String pass =et_password.getText().toString();
+         if(email.matches("toto@gmail.com")&& pass.matches("toto")){
+            Intent intent = new Intent(Login.this, Account.class);
+            intent.putExtra("login", et_email.getText().toString());
+            intent.putExtra("password", et_password.getText().toString());
+            Login.this.startActivity(intent);
+         } else
+         {
+             Toast. makeText(getApplicationContext(), "Identifiants incorrects", Toast. LENGTH_SHORT).show();
+         }
     }
 
     public void createAccount(View v){

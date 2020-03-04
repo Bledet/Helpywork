@@ -3,7 +3,7 @@
     <string name="start_display">HELPYWORK\nLA CLÉ DU SUCCES</string>
     <string name="welcome_display">BIENVENUE SUR HELPYWORK</string>
     <string name="name">NAME</string>
-    <string name="login">Login</string>
+    <string name="login">Se connecter</string>
     <string name="password">Mot de passe</string>
     <string name="confirm">Confirmation MDP</string>
     <string name="noAccount">Pas encore de compte ?</string>
@@ -13,9 +13,9 @@
     <string name="e_mail">Email</string>
     <string name="tag">L\'aide à proximité</string>
     <string name="swipe_right_for_login">Swipe Right for Login</string>
-    <string name="register">Register</string>
-    <string name="re_type_password">Re-type Password</string>
-    <string name="your_name">Full Name</string>
+    <string name="register">S\'inscrire</string>
+    <string name="re_type_password">Confirmation du mot de passe</string>
+    <string name="your_name">Nom Complet</string>
     <string name="ville">Votre ville</string>
 
     <string-array name="matiere_array">
