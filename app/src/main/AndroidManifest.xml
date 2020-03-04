@@ -11,15 +11,13 @@
 
         android:theme="@style/AppTheme">
 
-        <activity android:name=".TypeAide"></activity>
+        <activity android:name=".TypeAide"/>
         <activity android:name=".SelectMatiere" />
         <activity android:name=".ProposerEnLigne" />
         <activity android:name=".ProposerDomicile" />
         <activity android:name=".ListePostes" />
         <activity android:name=".AideEnLigne" />
-        <activity android:name=".ProposerAide" />
         <activity android:name=".AideDomicile" />
-        <activity android:name=".BesoinAide" />
         <activity android:name=".Account" />
         <activity android:name=".Login">
             <intent-filter>
