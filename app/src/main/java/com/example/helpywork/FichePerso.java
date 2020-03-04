@@ -9,6 +9,6 @@ public class FichePerso extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fiche_perso);
+        setContentView(R.layout.activity_f);
     }
 }

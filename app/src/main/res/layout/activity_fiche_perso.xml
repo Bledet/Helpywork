@@ -39,10 +39,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="J'ai besoin d'aide en"
+        android:text="Circuits éléctriques"
         android:textSize="25dp"
         android:weight="1"
         android:layout_gravity="center"
+        android:layout_marginBottom="100px"
         android:textColor="@android:color/white"/>
 
 
@@ -69,7 +70,8 @@ Merci\n beaucoup d'avance"
             android:layout_margin="5dp"
             android:background="@drawable/border_white"
             android:fontFamily="casual"
-            android:text="Poster"
+            android:onClick="onClick"
+            android:text="Itinéraire"
             android:textColor="#FFF" />
     </LinearLayout>
 
