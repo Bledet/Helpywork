@@ -81,9 +81,9 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="10dp"
                     android:padding="15dp"
-                    android:inputType="textPersonName"
                     android:fontFamily="@font/roboto_regular"
                     android:background="@drawable/et_custom"
+                    android:inputType="textMultiLine"
                     android:textSize="15sp" />
 
             </LinearLayout>
