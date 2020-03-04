@@ -43,33 +43,11 @@ public class AideDomicile extends AppCompatActivity {
         /* ----------------------------------------------------------------------- */
 
         ListView mListView = (ListView) findViewById(R.id.listView);
-/*
+
         final ArrayAdapter<String> adaptername = new ArrayAdapter<String>(AideDomicile.this,
                 android.R.layout.simple_list_item_1, prenoms);
-        mListView.setAdapter(adaptername);*/
-
-
-        List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
-
-        for(int i=0;i<10;i++){
-            HashMap<String, String> hm = new HashMap<String,String>();
-            hm.put("flag", Integer.toString(R.drawable.anonyme) );
-            hm.put("cur","Currency : " + prenoms[i]);
-            aList.add(hm);
-        }
-
-        // Keys used in Hashmap
-        String[] from = { "flag","cur" };
-
-        // Ids of views in listview_layout
-        int[] to = { R.id.flag,R.id.cur};
-
-        // Instantiating an adapter to store each items
-        // R.layout.listview_layout defines the layout of each item
-        SimpleAdapter adapter = new SimpleAdapter(getBaseContext(), aList, R.layout.activity_aide_domicile, from, to);
-
-        // Setting the adapter to the listView
-        mListView.setAdapter(adapter);
+        mListView.setAdapter(adaptername);
+        
 
     }
 
