@@ -6,19 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ListView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Aides extends AppCompatActivity {
-
-    private ListView lvAides;
-    private ListView lvDemandes;
+public class Help extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contributions);
+        setContentView(R.layout.activity_help);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -45,7 +41,7 @@ public class Aides extends AppCompatActivity {
             }
         });
 
-        lvAides = findViewById(R.id.listViewContribs);
-        lvDemandes = findViewById(R.id.listViewHelps);
+//        lvAides = findViewById(R.id.listViewContribs);
+//        lvDemandes = findViewById(R.id.listViewHelps);
     }
 }

@@ -10,8 +10,7 @@ import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class
-Account extends AppCompatActivity {
+public class Account extends AppCompatActivity {
 
     private TextView name;
 
@@ -32,7 +31,7 @@ Account extends AppCompatActivity {
                         return true;
                     case R.id.aides:
                         startActivity(new Intent(getApplicationContext(),
-                                Aides.class));
+                                Help.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.aider:

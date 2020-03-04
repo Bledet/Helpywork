@@ -20,7 +20,7 @@ public class Aider extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contribute);
+        setContentView(R.layout.activity_agir);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -37,7 +37,7 @@ public class Aider extends AppCompatActivity {
                         return true;
                     case R.id.aides:
                         startActivity(new Intent(getApplicationContext(),
-                                Aides.class));
+                                Help.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.aider:

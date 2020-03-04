@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/start_display"
                 android:textAlignment="center"
-                android:textColor="#FFF"
+                android:textColor="@android:color/white"
                 android:textSize="30dp"
                 android:fontFamily="casual"/>
 
@@ -39,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:text="LOGIN"
                     android:textSize="25dp"
-                    android:textColor="#FFF"
+                    android:textColor="@android:color/white"
                     android:fontFamily="casual"/>
                 <EditText
                     android:id="@+id/login"
@@ -49,8 +49,8 @@
                     android:layout_marginEnd="50dp"
                     android:textAlignment="center"
                     android:inputType="text"
-                    android:backgroundTint="#FFF"
-                    android:textColor="#FFF"
+                    android:backgroundTint="@android:color/white"
+                    android:textColor="@android:color/white"
                     android:hint="@string/login"
                     android:textColorHint="#CCC"/>
             </LinearLayout>
@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:text="MOT DE PASSE"
                     android:textSize="25dp"
-                    android:textColor="#FFF"
+                    android:textColor="@android:color/white"
                     android:fontFamily="casual"/>
 
                 <EditText
@@ -75,9 +75,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginEnd="50dp"
-                    android:backgroundTint="#FFF"
+                    android:backgroundTint="@android:color/white"
                     android:inputType="textPassword"
-                    android:textColor="#FFF"
+                    android:textColor="@android:color/white"
                     android:hint="@string/password"
                     android:textColorHint="#CCC"
                     android:textAlignment="center" />
@@ -90,7 +90,7 @@
                 android:onClick="onClick"
                 android:fontFamily="casual"
                 android:background="@drawable/border_white"
-                android:textColor="#FFF"
+                android:textColor="@android:color/white"
                 android:layout_margin="5dp"/>
 
             <LinearLayout
@@ -106,7 +106,7 @@
                     android:fontFamily="casual"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:textColor="#FFF"
+                    android:textColor="@android:color/white"
                     android:textAlignment="center"
                     />
                 <TextView

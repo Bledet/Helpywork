@@ -30,6 +30,9 @@
         <item>Terminal</item>
     </string-array>
 
+    <string name="queFaire">Que voulez-vous faire ?</string>
+    <string name="demandes">Mes demandes d\'aide</string>
+    <string name="contribs">Mes contributions</string>
     <string name="rechercheEnseignant">Recherchez votre enseignant</string>
     <string name="ajoutProblem">Ajout d\'un problème</string>
     <string name="selectNiveau">Sélectionnez une tranche de niveau</string>

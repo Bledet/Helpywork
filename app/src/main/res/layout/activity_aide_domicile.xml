@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:fontFamily="casual"
         android:textSize="20dp"
-        android:textColor="#FFF"/>
+        android:textColor="@android:color/white"/>
 
     <Spinner
         android:id="@+id/spinnerNiveau"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:onClick="onClick"
         android:background="@drawable/border_white"
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         android:layout_gravity="center"
         android:text="Filtrer"
         android:fontFamily="casual"
