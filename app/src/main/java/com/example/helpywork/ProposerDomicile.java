@@ -1,6 +1,7 @@
 package com.example.helpywork;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
@@ -18,6 +19,7 @@ public class ProposerDomicile extends ListActivity {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        Toast.makeText(this, "Position : " + position, Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(ProposerDomicile.this, FichePerso.class);
+        startActivity(intent);
     }
 }

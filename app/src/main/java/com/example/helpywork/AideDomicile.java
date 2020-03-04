@@ -48,7 +48,6 @@ public class AideDomicile extends AppCompatActivity {
                 R.array.niveau_array, R.layout.spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerNiveau.setAdapter(adapter);
-
     }
 
     public void onClick(View v){
