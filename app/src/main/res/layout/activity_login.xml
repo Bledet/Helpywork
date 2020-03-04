@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".Login">
 
     <LinearLayout
@@ -23,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/start_display"
                 android:textAlignment="center"
-                android:textColor="#265CCD"
+                android:textColor="#FFF"
                 android:textSize="30dp"
                 android:fontFamily="casual"/>
 
@@ -38,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:text="LOGIN"
                     android:textSize="25dp"
-                    android:textColor="#666666"
+                    android:textColor="#FFF"
                     android:fontFamily="casual"/>
                 <EditText
                     android:id="@+id/login"
@@ -48,8 +49,10 @@
                     android:layout_marginEnd="50dp"
                     android:textAlignment="center"
                     android:inputType="text"
-                    android:backgroundTint="#000"
-                    android:hint="@string/login"/>
+                    android:backgroundTint="#FFF"
+                    android:textColor="#FFF"
+                    android:hint="@string/login"
+                    android:textColorHint="#CCC"/>
             </LinearLayout>
 
             <LinearLayout
@@ -63,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:text="MOT DE PASSE"
                     android:textSize="25dp"
-                    android:textColor="#666666"
+                    android:textColor="#FFF"
                     android:fontFamily="casual"/>
 
                 <EditText
@@ -72,9 +75,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginEnd="50dp"
-                    android:backgroundTint="#000"
+                    android:backgroundTint="#FFF"
                     android:inputType="textPassword"
+                    android:textColor="#FFF"
                     android:hint="@string/password"
+                    android:textColorHint="#CCC"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -83,29 +88,35 @@
                 android:layout_height="wrap_content"
                 android:text="Connexion"
                 android:onClick="onClick"
+                android:fontFamily="casual"
+                android:background="@drawable/border_white"
+                android:textColor="#FFF"
                 android:layout_margin="5dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:layout_marginTop="20dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/noAccount"
                     android:fontFamily="casual"
                     android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
                     android:textAlignment="center"
                     />
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/border_white"
                     android:clickable="true"
                     android:fontFamily="casual"
-                    android:textSize="15dp"
-                    android:textColor="#265CCD"
+                    android:textColor="#EEE"
                     android:text="S'inscrire"
                     android:onClick="createAccount"/>
             </LinearLayout>
