@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.lang.reflect.Type;
+
 public class Account extends AppCompatActivity {
 
     private TextView name;
@@ -27,8 +29,8 @@ public class Account extends AppCompatActivity {
         teacher_btn = (ImageButton) findViewById(R.id.teacherButton);
         student_btn = (ImageButton) findViewById(R.id.studentButton);
 
-        teacher_btn.setTag("teacher");
-        student_btn.setTag("student");
+        teacher_btn.setTag("enseignant");
+        student_btn.setTag("etudiant");
 
         name = (TextView) findViewById(R.id.name);
 
@@ -40,11 +42,13 @@ public class Account extends AppCompatActivity {
         selected = findViewById(v.getId());
 
 
-        if(selected.getTag() == "teacher"){
-            Intent intent = new Intent(Account.this, ProposerAide.class);
+        if(selected.getTag() == "enseignant"){
+            Intent intent = new Intent(Account.this, TypeAide.class);
+            intent.putExtra("statut", "enseignant");
             startActivity(intent);
-        } else if ( selected.getTag() == "student"){
-            Intent intent = new Intent(Account.this, BesoinAide.class);
+        } else if ( selected.getTag() == "etudiant"){
+            Intent intent = new Intent(Account.this, TypeAide.class);
+            intent.putExtra("statut", "etudiant");
             startActivity(intent);
         }
 

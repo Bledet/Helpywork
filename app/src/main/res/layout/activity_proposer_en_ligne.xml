@@ -4,53 +4,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".ProposerDomicile">
-    <TextView
-        android:id="@+id/matiere"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Matière"
-        android:fontFamily="casual"
-        android:textStyle="bold"
-        android:textColor="#265CCD"
-        android:textSize="20dp"
-        android:layout_margin="20dp"/>
-    <Spinner
-        android:id="@+id/spinnermatiere"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
 
     <TextView
-        android:id="@+id/niveau"
+        android:id="@+id/chosen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Niveau: De la:"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/selectNiveau"
         android:fontFamily="casual"
         android:textStyle="bold"
-        android:textColor="#265CCD"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="De la"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#FFF"
         android:textSize="20dp"
         android:layout_margin="20dp"/>
     <Spinner
         android:id="@+id/spinnerniveau1"
-        android:layout_width="match_parent"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         />
+
 
     <TextView
         android:id="@+id/niveau2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="à la"
+        android:text="A la"
         android:fontFamily="casual"
         android:textStyle="bold"
-        android:textColor="#265CCD"
+        android:textColor="#FFF"
         android:textSize="20dp"
         android:layout_margin="20dp"/>
     <Spinner
         android:id="@+id/spinnerniveau2"
-        android:layout_width="match_parent"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         />
 
     <LinearLayout
@@ -65,7 +73,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Valider"
+            android:fontFamily="casual"
             android:onClick="onClick"
+            android:textColor="#FFF"
+            android:background="@drawable/border_white"
             android:layout_margin="5dp"/>
     </LinearLayout>
 
