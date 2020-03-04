@@ -25,7 +25,8 @@
                 android:textAlignment="center"
                 android:textColor="#FFF"
                 android:textSize="30dp"
-                android:fontFamily="casual"/>
+                android:fontFamily="casual"
+                android:gravity="center_horizontal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,7 +43,7 @@
                     android:fontFamily="casual"/>
 
                 <EditText
-                    android:id="@+id/login"
+                    android:id="@+id/title"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:hint="@string/your_name"

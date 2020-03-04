@@ -42,6 +42,8 @@
     </string-array>
 
     <string name="rechercheEnseignant">Recherchez votre enseignant</string>
+    <string name="description">Description du niveau</string>
+    <string name="chapitre">Titre du chapitre</string>
     <string name="ajoutProblem">Ajout d\'un problème</string>
     <string name="selectNiveau">Sélectionnez une tranche de niveau</string>
     <string name="selectMatiere">Sélectionnez la matière</string>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,14 +17,15 @@ public class ProposerDomicile extends AppCompatActivity {
     Spinner spinnermatiere, spinnerniveau;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proposer_domicile);
 
 
-        spinnerniveau = (Spinner) findViewById(R.id.spinnerniveau);
+
+
+        spinnerniveau = (Spinner) findViewById(R.id.spinnerniveau1);
         List niveauarray = new ArrayList();
         niveauarray.add("6ème");
         niveauarray.add("5ème");
