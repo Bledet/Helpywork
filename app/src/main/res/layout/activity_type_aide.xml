@@ -27,18 +27,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="25dp"
             android:gravity="center"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/teacherText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Aide en ligne"
-                android:textColor="@android:color/white"
-                android:fontFamily="casual"
-                android:textSize="20dp" />
 
             <ImageButton
                 android:id="@+id/aideEnLigne"
@@ -55,15 +46,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_margin="10dp">
-            <TextView
-                android:id="@+id/studentText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Aide à domicile"
-                android:textColor="@android:color/white"
-                android:fontFamily="casual"
-                android:textSize="20dp"/>
+            android:layout_margin="25dp">
 
             <ImageButton
                 android:id="@+id/aideADomicile"
