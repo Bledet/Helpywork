@@ -49,13 +49,7 @@ public class AideDomicile extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerNiveau.setAdapter(adapter);
 
-        /* ----------------------------------------------------------------------- */
-
-        ListView mListView = (ListView) findViewById(R.id.listView);
-
-        final ArrayAdapter<String> adaptername = new ArrayAdapter<String>(AideDomicile.this,
-                android.R.layout.simple_list_item_1, prenoms);
-        mListView.setAdapter(adaptername);
+        
 
     }
 

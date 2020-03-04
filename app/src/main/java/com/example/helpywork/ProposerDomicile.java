@@ -8,8 +8,8 @@ public class ProposerDomicile extends ListActivity {
         super.onCreate(savedInstanceState);
 
         String[] values = new String[]{
-                "Antoine   15km", "Benoit    11km", "Cyril       20km", "David     23km", "Eloise    17km", "Florent   7km",
-                "Gerard   5km", "Hugo     24km", "Ingrid   12km", "Jonathan  13km"
+                "Antoine      5km", "Benoit        7km", "Cyril           11km", "David         15km", "Eloise        17km", "Florent      24km",
+                "Gerard       30km", "Hugo         33km", "Ingrid         40km", "Jonathan  51km"
         };
 
         ListAdapter adaptateur = new ListAdapter(this, values);
