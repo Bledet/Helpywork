@@ -15,7 +15,7 @@
         android:fontFamily="casual"
         android:gravity="center"
         android:text="@string/selectMatiere"
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         android:textSize="20dp"
         android:textStyle="bold" />
 

@@ -1,36 +1,48 @@
 package com.example.helpywork;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
+import android.view.MenuItem;
 import android.widget.TextView;
 
-import java.lang.reflect.Type;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Account extends AppCompatActivity {
 
     private TextView name;
-    private TextView pw;
-
-    private int CREATE = 1;
-    private ImageButton selected;
-
-    private ImageButton teacher_btn;
-    private ImageButton student_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        teacher_btn = (ImageButton) findViewById(R.id.teacherButton);
-        student_btn = (ImageButton) findViewById(R.id.studentButton);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        teacher_btn.setTag("enseignant");
-        student_btn.setTag("etudiant");
+        bottomNavigationView.setSelectedItemId(R.id.account);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.account:
+                        return true;
+                    case R.id.aides:
+                        startActivity(new Intent(getApplicationContext(),
+                                Help.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.aider:
+                        startActivity(new Intent(getApplicationContext(),
+                                Aider.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
 
         name = (TextView) findViewById(R.id.name);
 
@@ -38,19 +50,5 @@ public class Account extends AppCompatActivity {
         name.setText(intent.getStringExtra("login"));
     }
 
-    public void onClick(View v){
-        selected = findViewById(v.getId());
 
-
-        if(selected.getTag() == "enseignant"){
-            Intent intent = new Intent(Account.this, TypeAide.class);
-            intent.putExtra("statut", "enseignant");
-            startActivity(intent);
-        } else if ( selected.getTag() == "etudiant"){
-            Intent intent = new Intent(Account.this, TypeAide.class);
-            intent.putExtra("statut", "etudiant");
-            startActivity(intent);
-        }
-
-    }
 }
