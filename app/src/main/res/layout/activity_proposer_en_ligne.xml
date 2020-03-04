@@ -27,40 +27,34 @@
         android:textSize="20dp"
         android:layout_margin="20dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="De la"
-        android:fontFamily="casual"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        android:textSize="20dp"
-        android:layout_margin="20dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
     <Spinner
         android:id="@+id/spinnerniveau1"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        />
-
-
-    <TextView
-        android:id="@+id/niveau2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="A la"
-        android:fontFamily="casual"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        android:textSize="20dp"
-        android:layout_margin="20dp"/>
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight="2" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_right"
+        android:layout_weight="1"
+
+        android:layout_gravity="center"/>
+
     <Spinner
         android:id="@+id/spinnerniveau2"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_gravity="right"
         />
-
+</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,5 +73,7 @@
             android:background="@drawable/border_white"
             android:layout_margin="5dp"/>
     </LinearLayout>
+
+
 
 </LinearLayout>
