@@ -6,34 +6,34 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.ListView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class
-Account extends AppCompatActivity {
+public class Aides extends AppCompatActivity {
 
-    private TextView name;
+    private ListView lvAides;
+    private ListView lvDemandes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_account);
+        setContentView(R.layout.activity_contributions);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        bottomNavigationView.setSelectedItemId(R.id.account);
+        bottomNavigationView.setSelectedItemId(R.id.aides);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.account:
+                        startActivity(new Intent(getApplicationContext(),
+                                Account.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.aides:
-                        startActivity(new Intent(getApplicationContext(),
-                                Aides.class));
-                        overridePendingTransition(0,0);
                         return true;
                     case R.id.aider:
                         startActivity(new Intent(getApplicationContext(),
@@ -45,11 +45,7 @@ Account extends AppCompatActivity {
             }
         });
 
-        name = (TextView) findViewById(R.id.name);
-
-        Intent intent = getIntent();
-        name.setText(intent.getStringExtra("login"));
+        lvAides = findViewById(R.id.listViewContribs);
+        lvDemandes = findViewById(R.id.listViewHelps);
     }
-
-
 }

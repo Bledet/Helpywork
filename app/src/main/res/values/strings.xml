@@ -38,4 +38,8 @@
     <string name="problemTitleHint">Veuillez entrer votre titre</string>
     <string name="problemDescription">Description du problème</string>
     <string name="problemDescriptionHint">Saisissez la description de votre problème</string>
+    <string name="title_activity_botton_navigation">BottonNavigation</string>
+    <string name="title_account">Compte</string>
+    <string name="title_aides">Mes Aides</string>
+    <string name="title_agir">Agir</string>
 </resources>
