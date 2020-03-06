@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".FichePerso">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/anonyme"
+            android:scaleType="fitCenter"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Antoine     5km"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Circuits éléctriques"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100px"
+        android:textColor="@android:color/white"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Bonjour , je suis en terminale\n j'ai un exercice à faire en\n physique et je suis vraiment\n perdu j'arrive pas à répondre\n aux questions , j'aurais besoin\n qu'on m'aide s'il vous plait pour\n revoir les cours concernant les\n schémas électriques et les\n calculs qui vont avec.
+Merci\n beaucoup d'avance"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/border_white"
+            android:fontFamily="casual"
+            android:onClick="onClick"
+            android:text="Itinéraire"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+</LinearLayout>

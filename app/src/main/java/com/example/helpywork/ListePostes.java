@@ -23,7 +23,7 @@ public class ListePostes extends AppCompatActivity {
         intent = getIntent();
 
         title = (TextView) findViewById(R.id.listTitle);
-        title.setText("Les des posts en " + intent.getStringExtra("matiere"));
+        title.setText("Liste des posts en " + intent.getStringExtra("matiere"));
 
         ListView mListView = (ListView) findViewById(R.id.listView);
 

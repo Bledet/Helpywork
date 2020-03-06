@@ -8,11 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="HelpyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="HelpyTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#265CCD</item>
-        <item name="colorPrimaryDark">#0F3990</item>
-        <item name="colorAccent">#EE7C2D</item>
+        <item name="colorPrimary">#505050</item>
+        <item name="colorPrimaryDark">#323232</item>
+        <item name="colorAccent">#C6B2A1</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="ListFont" parent="@android:style/Widget.ListView">

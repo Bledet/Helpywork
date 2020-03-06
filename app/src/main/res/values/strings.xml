@@ -3,21 +3,33 @@
     <string name="start_display">HELPYWORK\nLA CLÉ DU SUCCES</string>
     <string name="welcome_display">BIENVENUE SUR HELPYWORK</string>
     <string name="name">NAME</string>
-    <string name="login">Login</string>
+    <string name="login">Se connecter</string>
     <string name="password">Mot de passe</string>
     <string name="confirm">Confirmation MDP</string>
     <string name="noAccount">Pas encore de compte ?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="swipe_left_for_register">Swipe Left for Register</string>
+    <string name="e_mail">Email</string>
+    <string name="tag">L\'aide à proximité</string>
+    <string name="swipe_right_for_login">Swipe Right for Login</string>
+    <string name="register">S\'inscrire</string>
+    <string name="re_type_password">Confirmation du mot de passe</string>
+    <string name="your_name">Nom Complet</string>
+    <string name="ville">Votre ville</string>
 
     <string-array name="matiere_array">
         <item>Mathématiques</item>
         <item>Français</item>
         <item>Anglais</item>
+        <item>Italien</item>
         <item>Histoire</item>
         <item>Géographie</item>
         <item>SVT</item>
         <item>Physique</item>
         <item>Art</item>
         <item>Chimie</item>
+        <item>Philosophie</item>
     </string-array>
 
     <string-array name="niveau_array">
@@ -34,6 +46,8 @@
     <string name="demandes">Mes demandes d\'aide</string>
     <string name="contribs">Mes contributions</string>
     <string name="rechercheEnseignant">Recherchez votre enseignant</string>
+    <string name="description">Description du niveau</string>
+    <string name="chapitre">Titre du chapitre</string>
     <string name="ajoutProblem">Ajout d\'un problème</string>
     <string name="selectNiveau">Sélectionnez une tranche de niveau</string>
     <string name="selectMatiere">Sélectionnez la matière</string>
