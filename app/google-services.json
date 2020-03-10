@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "85372725874",
+    "firebase_url": "https://helpywork.firebaseio.com",
+    "project_id": "helpywork",
+    "storage_bucket": "helpywork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85372725874:android:4b9d36d64476b8dd0af0eb",
+        "android_client_info": {
+          "package_name": "com.example.helpywork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85372725874-umvf7jdposqg2ulkk9vqef71bsmdh0et.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.helpywork",
+            "certificate_hash": "49a5164c31f3fb7701eff569e953e1ee76cfd459"
+          }
+        },
+        {
+          "client_id": "85372725874-n8743v97a51loeum739i7dvsuth8rqus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTli2Vbfz1tn4Stuv-bERVhjEfz1CM5YE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85372725874-n8743v97a51loeum739i7dvsuth8rqus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
