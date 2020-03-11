@@ -30,7 +30,6 @@ public class Login extends AppCompatActivity {
          String pass =et_password.getText().toString();
          if(email.matches("toto@gmail.com")&& pass.matches("toto")){
             Intent intent = new Intent(Login.this, Account.class);
-            intent.putExtra("login", et_email.getText().toString());
             intent.putExtra("password", et_password.getText().toString());
             Login.this.startActivity(intent);
          } else

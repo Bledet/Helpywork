@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:fontFamily="casual"
-            android:text="Benoît"
+            android:text="Jackson"
             android:textSize="25dp"
             android:textColor="@android:color/white" />
 
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:fontFamily="casual"
-                android:text="24 ans"
+                android:text="23 ans"
                 android:textSize="20dp"
                 android:textColor="@android:color/white" />
         </LinearLayout>
@@ -74,13 +74,13 @@
         android:gravity="center"
         android:fontFamily="casual"
         android:textStyle="bold"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:text="Description"
         android:textSize="23dp"
         android:textColor="@android:color/white" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/titleDescription"
         android:layout_above="@+id/bottom_navigation"
@@ -88,7 +88,7 @@
         android:layout_marginEnd="20dp"
         android:gravity="center_vertical"
         android:justificationMode="inter_word"
-        android:text="Etudiant en dernière année de Master en mathématiques, je propose du soutien dans divers matière tel que les mathématique, l'anglais"
+        android:text="Etudiant en dernière année de Master en Physique, je propose du soutien dans divers matières tel que les mathématiques, la physique, la chimie mais aussi l'anglais. Je suis prêt à me déplacer selon la distance à laquelle vous êtes. Hâte de pouvoir vous enseigner mon savoir :)"
         android:textColor="@android:color/white"
         android:textSize="25dp" />
 
