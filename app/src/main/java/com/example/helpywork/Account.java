@@ -43,11 +43,6 @@ public class Account extends AppCompatActivity {
                 return false;
             }
         });
-
-        name = (TextView) findViewById(R.id.name);
-
-        Intent intent = getIntent();
-        name.setText(intent.getStringExtra("login"));
     }
 
 
