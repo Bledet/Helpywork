@@ -23,7 +23,7 @@ public class Help extends AppCompatActivity {
             "Camille - Terminale - Mathématiques",
             "Antoine - Seconde - Physique",
             "Laura - Première - Français",
-            "Justiine - Cinquième - Mathématiques",
+            "Justine - Cinquième - Mathématiques",
             "Marc-Antoine - Sixième - Anglais"
     };
 

@@ -72,6 +72,7 @@
             android:layout_gravity="bottom|center"
             android:background="@drawable/border_messagefield"
             android:hint="Saisissez votre message"
+            android:padding="10dp"
             android:textColor="@android:color/black"
             android:textColorHint="#BBB" />
 
@@ -81,7 +82,7 @@
             android:layout_margin="2dp"
             android:scaleType="fitCenter"
             android:src="@drawable/send_button"
-            android:background="@drawable/border_white"
+            android:background="@color/transparent"
             android:layout_gravity="bottom"/>
     </LinearLayout>
 </LinearLayout>
