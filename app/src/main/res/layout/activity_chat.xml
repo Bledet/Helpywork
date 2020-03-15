@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Chat">
+
+    <TextView
+        android:id="@+id/helpywork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#505050"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:text="Camille"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bonjour, quand êtes vous disponible\npour que je vienne vous aider ?"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_get"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bonjour, je suis disponible toute la semaine\nprochaine, avez vous des préferences ?"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_send"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Je suis disponible lundi toute la journée\nsi vous voulez."
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_get"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lundi après midi ce serait parfait pour moi !"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_send"
+        android:padding="10dp"/>
+
+</LinearLayout>
