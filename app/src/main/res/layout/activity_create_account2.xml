@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".create_account2">
 
 
     <TextView
@@ -39,7 +40,7 @@
         android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="@string/your_name"
+        android:hint="@string/ville"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
@@ -52,7 +53,7 @@
         android:id="@+id/et_firstname"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="@string/prenom"
+        android:hint="@string/cp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
@@ -66,7 +67,7 @@
         android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="@string/e_mail"
+        android:hint="@string/adresse"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
@@ -76,32 +77,6 @@
         android:background="@drawable/et_custom"
         android:textSize="15sp" />
 
-    <EditText
-        android:id="@+id/et_password"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="@string/password"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:padding="15dp"
-        android:fontFamily="@font/roboto_regular"
-        android:inputType="textPassword"
-        android:background="@drawable/et_custom"
-        android:textSize="15sp" />
-
-    <EditText
-        android:id="@+id/et_repassword"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="@string/re_type_password"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:padding="15dp"
-        android:fontFamily="@font/roboto_regular"
-        android:inputType="textPassword"
-        android:background="@drawable/et_custom"
-        android:textSize="15sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -119,7 +94,7 @@
             android:textColor="#FFF"
             android:background="@drawable/border_white"
             android:onClick="onClick"
-            android:text="@string/suivant" />
+            android:text="@string/register" />
 
 
     </RelativeLayout>

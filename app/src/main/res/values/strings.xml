@@ -15,8 +15,12 @@
     <string name="swipe_right_for_login">Swipe Right for Login</string>
     <string name="register">S\'inscrire</string>
     <string name="re_type_password">Confirmation du mot de passe</string>
-    <string name="your_name">Nom Complet</string>
+    <string name="your_name">Nom</string>
     <string name="ville">Votre ville</string>
+    <string name="prenom">Prénom</string>
+    <string name="suivant">Etape suivante</string>
+    <string name="cp">Code postal</string>
+    <string name="adresse">Adresse</string>
 
     <string-array name="matiere_array">
         <item>Mathématiques</item>

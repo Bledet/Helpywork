@@ -64,13 +64,59 @@
                 android:textColor="@android:color/white" />
         </LinearLayout>
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/Layout1"
+        android:gravity="left">
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/etoilejaune" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/etoilejaune" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/etoilejaune" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/etoilejaune" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/etoilegrise" />
+
+
     </LinearLayout>
 
     <TextView
         android:id="@+id/titleDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Layout1"
+        android:layout_below="@+id/Layout2"
         android:gravity="center"
         android:fontFamily="casual"
         android:textStyle="bold"
@@ -90,7 +136,7 @@
         android:justificationMode="inter_word"
         android:text="Etudiant en dernière année de Master en mathématiques, je propose du soutien dans divers matière tel que les mathématique, l'anglais"
         android:textColor="@android:color/white"
-        android:textSize="25dp" />
+        android:textSize="20dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
