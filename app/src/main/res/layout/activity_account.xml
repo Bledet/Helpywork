@@ -32,6 +32,8 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:scaleType="fitCenter"
             android:layout_marginLeft="10dp"
             android:src="@drawable/anonyme" />
@@ -44,14 +46,14 @@
             android:gravity="center">
 
             <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:fontFamily="casual"
-            android:text="Benoît"
-            android:textSize="25dp"
-            android:textColor="@android:color/white" />
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="casual"
+                android:text="Benoît"
+                android:textSize="25dp"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/age"
@@ -69,45 +71,42 @@
 
     <LinearLayout
         android:id="@+id/Layout2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginRight="20dp"
         android:layout_below="@+id/Layout1"
         android:gravity="left">
 
-
-
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:scaleType="fitCenter"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:src="@drawable/etoilejaune" />
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:scaleType="fitCenter"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:src="@drawable/etoilejaune" />
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:scaleType="fitCenter"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:src="@drawable/etoilejaune" />
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:scaleType="fitCenter"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:src="@drawable/etoilejaune" />
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:scaleType="fitCenter"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/etoilegrise" />
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/etoilegriseetjaune" />
 
 
     </LinearLayout>
@@ -128,13 +127,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/titleDescription"
         android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/titleDescription"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:gravity="center_vertical"
+        android:layout_marginBottom="2dp"
+        android:gravity="top"
         android:justificationMode="inter_word"
-        android:text="Etudiant en dernière année de Master en mathématiques, je propose du soutien dans divers matière tel que les mathématique, l'anglais"
+        android:text="Etudiant en dernière année de Master en Physique, je propose du soutien dans divers matières tel que les mathématiques, la physique, la chimie mais aussi l'anglais. Je suis prêt à me déplacer selon la distance à laquelle vous êtes. Hâte de pouvoir vous enseigner mon savoir :)"
         android:textColor="@android:color/white"
         android:textSize="20dp" />
 
