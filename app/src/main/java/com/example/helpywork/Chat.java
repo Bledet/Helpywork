@@ -18,7 +18,7 @@ public class Chat extends AppCompatActivity {
         name = (TextView )findViewById(R.id.name);
 
         Intent intent = getIntent();
-        
+
         name.setText(intent.getStringExtra("name"));
 
     }
