@@ -59,4 +59,29 @@
         android:background="@drawable/border_send"
         android:padding="10dp"/>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/border_messagefield"
+            android:hint="Saisissez votre message"
+            android:textColor="@android:color/black"
+            android:textColorHint="#BBB" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/send_button"
+            android:background="@drawable/border_white"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
 </LinearLayout>
