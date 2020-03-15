@@ -31,6 +31,11 @@ public class ListAdapter extends BaseAdapter {
         return 12;
     }
 
+    private Integer[] tab_images_pour_la_liste = {
+            R.drawable.img1, R.drawable.img2,
+            R.drawable.img3, R.drawable.img4,
+            R.drawable.img5, R.drawable.img6, R.drawable.img7,
+            R.drawable.img8, R.drawable.img9, R.drawable.img10};
 
     String[] values = new String[]{
             "Antoine      5km", "Benoit        7km", "Cyril           11km", "David         15km", "Eloise        17km", "Florent      24km",
@@ -51,7 +56,7 @@ public class ListAdapter extends BaseAdapter {
 
         textView.setText(values[position]);
 
-        imageView.setImageResource(R.drawable.anonyme);
+        imageView.setImageResource(tab_images_pour_la_liste[position]);
         /*}else {
             rowView = (View)convertView;
         }*/
